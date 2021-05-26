@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户退出页面</title>
+    <style type="text/css">
+        body {
+            background: url('../images/tu1.png');
+        }
+
+        .content {
+            width: 200px;
+            height: 150px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 16px;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        .content form {
+            padding-top: 0px;
+        }
+        .content h2{
+            padding-top: 15px;
+        }
+        .content input {
+            width: 100px;
+            height: 32px;
+            border-radius: 20px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 14px;
+            color: red;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h2>用户退出</h2>
+        <form action="/user/logout" method="get">
+                 <input type="submit" value="退出">
+     
+        </form> 
+    
+    </div>
+</body>
+
+</html>

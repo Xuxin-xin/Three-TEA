@@ -1,0 +1,625 @@
+@charset "utf-8";
+
+/* 头部导航开始 */
+#fixed_header{
+    width:100%;
+    height:80px;
+    background: #fff;
+}
+.container{
+    width:1200px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+}
+.header-l{
+    float: left;
+    height: 40px;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+.t1{
+    float: left;
+    padding-right: 20px;
+    align-items: center;
+}
+.t1 img{
+    width: 180px;
+    height: 80px;
+}
+/* .hotline{
+    float: left;
+    width: 50px;
+    line-height: 40px;
+}
+.hotline p{
+    height: 40px;
+    border-left:2px solid #eee;
+    padding-left: 10px;
+}
+.phone{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: red;
+    font-size: 27px;
+    padding-left: 8px;
+
+} */
+.header-r{
+    float: left;
+}
+.header-r .nav{
+    width: 600px;
+    height: 80px;
+    display: flex;
+    line-height: 80px;
+    text-align: center;
+}
+.header-r .nav .item{
+    width: 600px;
+    text-align: justify;
+    justify-content: space-between;
+    display: inline;
+    font-weight: bold;
+}
+.header-r .nav .item a{
+    display: block;
+    text-decoration: none;
+    color:black;
+}
+.header-r .nav .sub{
+    display: none;
+    width: 120px;
+    z-index: 99999;
+}
+.header-r .nav .sub ul{
+    background-color: rgba(255, 255, 255, 0.9);
+    border: #dddddd 1px solid;
+    line-height: 50px;
+    padding: 5px 0 10px 0;
+}
+.header-r .nav .sub ul li{
+    border-bottom: #666 dashed 1px;
+    padding-left: 14px;
+    margin: 5px auto;
+    font-size: 15px;
+}
+.t2{
+    float: right;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.t2 img{
+    width: 50px;
+    height: 50px;
+    border:  2px solid #eee;
+    border-radius: 50px;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    z-index: 9999;
+}
+/* 头部导航结束 */
+
+/* 轮播效果开始 */
+#roll{
+    width: 1200px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+#slide{
+    width: 36000px;
+    height: 400px;
+    position: relative;
+    left: 0px;
+    top: 0;
+    z-index: -1;
+}
+ #slide li {
+    width: 1200px;
+    height: 400px;
+    float: left;
+}
+
+#slide .n1 {
+    width: 1200px;
+    height: 400px;
+    background-position: center top;
+}
+#point {
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -80px;
+}
+
+#point li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ccc;
+    float: left;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#point .active {
+    background: red;
+}
+#prev,
+#next {
+    width: 25px;
+    height: 50px;
+    position: absolute;
+    top: 150px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+     right: 10px;
+}
+
+#prev img,
+#next img {
+    width: 100%;
+  height: 100%;
+}
+/* 轮播效果结束 */
+
+/* 当前位置开始 */
+.place{
+    width: 1200px;
+    margin: 10px auto;
+    padding: 30px 20px;
+    font-size: 15px;
+}
+/* 当前位置结束 */
+
+/* 内容左开始  */
+#box{
+    width:1200px;
+    height:600px;
+    display: flex;
+}
+#box .b_left{
+    width: 650px;
+    height: 400px;
+    margin: 10px;
+    border: 1px solid #eee;
+    box-shadow: 4px 4px 5px 3px #41627e;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+}
+#box .b_left ul{
+    width: 550px;
+    height: 360px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#box .b_left ul li {
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+/* 内容左结束 */
+
+
+
+
+/* 内容右开始 */
+.login_Box {
+    width: 380px;
+    background: #ffffff;
+}
+
+.login_Box .hd {
+    height: 30px;
+    position: relative;
+}
+
+.login_Box .hd ul li {
+    float: left;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #dddddd;
+}
+
+.login_Box .hd ul li.on {
+    color: #ff0000;
+}
+.login_Box .bd{
+    position: relative;
+}
+.login_Box .bd ul {
+    padding: 0px;
+    display: none;
+    clear: both;
+    width: 100%;
+    position: absolute;
+}
+
+/*相关的表单格式*/
+.login-bg .message {
+    margin: 0;
+    padding-bottom: 20px;
+    background: #ffffff;
+    position: relative;
+    color: #333;
+    font-size: 14px;
+}
+
+.login-bg .login-bg_tit {
+    padding-right: 10px;
+    line-height: 30px;
+    position: relative;
+    color: #666666;
+    font-size: 13px;
+    text-align: center;
+}
+
+.login-bg input[type=number],
+.login-bg input[type=text],
+.login-bg input[type=file],
+.login-bg input[type=password],
+.login-bg input[type=email],
+.login-bg select {
+    border: 1px solid #DCDEE0;
+    vertical-align: middle;
+    border-radius: 3px;
+    height: 50px;
+    padding: 0px 16px;
+    font-size: 16px;
+    color: #555555;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-bg input[type=text]:focus,
+.login-bg input[type=number]:focus,
+.login-bg input[type=file]:focus,
+.login-bg input[type=password]:focus,
+.login-bg input[type=email]:focus,
+select:focus {
+    border: 1px solid #27A9E3;
+}
+
+.login-bg button,
+.login-bg input[type=submit],
+.login-bg input[type=button] {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 24px;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #d00000;
+    border-radius: 3px;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    width: 100%;
+}
+
+.login-bg textarea {
+    width: 100%;
+    height: 70px;
+    font-size: 13px;
+    border: 1px solid #DCDEE0;
+    padding: 10px 20px;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+.login-bg .inputtit {
+    font-size: 16px;
+    text-transform: none;
+}
+
+.login-bg hr {
+    background: #fff;
+}
+
+.login-bg hr.hr15 {
+    height: 15px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.login-bg hr.hr20 {
+    height: 40px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.login-bg .login-bgitem{
+    margin: 10px auto;
+}
+/*小按钮*/
+.login-bg .anniu {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px;
+    line-height: 15px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #d58512;
+    border-radius: 3px;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    height: 35px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.login-bg .submit_item {
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-bg .yanzhengma {
+    width: 50%;
+    font-size: 13px;
+    float: left;
+}
+
+.login-bg .yanzhengma input {
+    background: url(images/smallicon4.png) left center no-repeat;
+    background-position: 5px;
+    padding-left: 35px;
+}
+
+.login-bg .pass input {
+    background: url(images/smallicon2.png) left center no-repeat;
+    background-position: 5px;
+    padding-left: 35px;
+}
+/* 内容右结束 */
+
+
+/* 底部开始 */
+.bottom{
+    width: 100%;
+    height: 270px;
+    background-color: #222222;
+    text-align: center;
+    color: #999;
+}
+.bottom .visit{
+    font-size: 16px;
+    justify-content: center;
+    display: flex;
+    padding-top: 35px;
+}
+.bottom .visit span{
+    margin-left: 10px;
+    color: #444;
+}
+.bottom .visit span{
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+}
+.bottom .copyright{
+    padding-top: 20px;
+    font-size: 15px;
+}
+.bottom .cardtu img{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+/* 底部结束 */
+
+/* 回到顶部开始 */
+.return{
+   width: 50px;
+   height: 50px;
+   background-color:#8e6836;
+   position: fixed;
+   right: 50px;
+   bottom: 60px;
+   display: none
+}
+.return img{
+    width: 40px;
+    height: 40px;
+    margin: 5px 5px;
+}
+/* 回到顶部结束 */
+
+
+
+
+/* 子页面1开始 */
+/* 左侧导航开始 */
+.count {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0px;
+    border: none;
+    display: flex;
+}
+
+.left-nav {
+    z-index: 2;
+    padding-top: 10px;
+    width: 200px;
+    max-width: 200px;
+    height: 800px;
+    overflow: auto;
+    margin: 0;
+}
+
+#nav li {
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+#nav li a:hover {
+    color: white;
+}
+
+#nav li a {
+    font-size: 14px;
+    padding: 12px 15px 12px 20px;
+    display: block;
+    cursor: pointer;
+    color: white;
+    transition: background-color ease .3s;
+}
+
+#nav>li .nav_title {
+    line-height: 30px;
+    border-left: 4px solid #7e2625; 
+    background-color: #324e67;
+}
+
+#nav>li .nav_title:hover {
+    background: #7e2625;
+    border-left: 4px solid #324e67;
+}
+
+#nav>li .nav_title .nav_right {
+    float: right;
+    margin-right: 15px;
+}
+
+#nav li .sub-menu {
+    display: none;
+}
+
+#nav li .sub-menu li:hover {
+    background: #eee;
+}
+
+#nav li .sub-menu li a {
+    padding: 10px 15px 10px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #8e8e8e;
+}
+.opennav{
+    background: #7e2625;
+}
+/* 左侧导航开始 */
+
+/* 右侧图片开始 */
+.right_img{
+    margin: 20px 50px;
+}
+.first{
+    width: 900px;
+    display: flex;
+}
+.first .one{
+    height: 250px;
+    margin: 18px 0;
+}
+.first .one img{
+    width: 280px;
+    height: 190px;
+    margin: 15px 20px;
+}
+.first .one p{
+    margin-left: 20px;
+    font-size: 15px;
+}
+/* 右侧图片结束 */
+/* 给图片增加滤镜开始 */
+.one{
+    position: relative;
+}
+.one:hover img{
+   filter: brightness(75%);
+}
+.one .ps{
+    display: none;
+}
+.one:hover .ps{
+    width: 250px;
+    height: 140px;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    display: block;
+}
+.one:hover .ps img{
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+.one .text .worker{
+    display: none;
+}
+.one:hover .text .worker{
+    display: block;
+}
+.one:hover .text{
+    padding: 10px 1px;
+    width: 280px;
+    height: 70px;
+    text-align:left;
+    background-color: #fff;
+    transition:transform 1s;
+    transform: translate(0,-40px);
+}
+/* 给图片增加滤镜结束 */
+
+/* 分页开始 */
+.pagination{
+    display: flex;
+    justify-content:center;
+    font-size: 18px;
+    margin-bottom: 90px;
+    margin-left: 270px;
+    margin-top: 25px;
+}
+.pagination li{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30px;
+}
+/* 分页结束 */
+/* 子页面1结束 */

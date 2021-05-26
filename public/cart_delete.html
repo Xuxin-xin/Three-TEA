@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>删除商品页面</title>
+    <style type="text/css">
+        body {
+            background: url('../images/3.jpg');
+        }
+
+        .content {
+            width: 300px;
+            height: 220px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 16px;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        .content form {
+            padding-top: 0px;
+        }
+
+        .content h2 {
+            padding-top: 15px;
+        }
+
+        .content input[type='text'] {
+            width: 200px;
+            height: 32px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .content input[type='submit']{
+            width: 100px;
+            height: 32px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+        }
+        .content p {
+            font-size: 14px;
+            color: red;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h2>删除购物车</h2>
+        <form action="/cart/del" method="get">
+            购物车编号<br><input type="text" name="iid"><br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>

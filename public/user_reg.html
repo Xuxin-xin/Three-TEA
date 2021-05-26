@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <style type="text/css">
+        body {
+            background: url('../images/8.jpg');
+        }
+
+        .content {
+            width: 600px;
+            height: 370px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 16px;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        .content form {
+            padding-top: 0px;
+        }
+
+        .content h2 {
+            padding-top: 15px;
+        }
+
+        .content input[type='text'] {
+            width: 280px;
+            height: 32px;
+            border-radius: 20px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .content input[type='submit']{
+            width: 100px;
+            height: 32px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+        }
+        .content p {
+            font-size: 14px;
+            color: red;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h2>用户注册</h2>
+        <form action="/user/reg" method="post">
+            <input type="text" name="uname" id="" placeholder="用户名或账号"><br>
+            <input type="text" name="upwd" id="" placeholder="密码"><br>
+            <input type="text" name="email" id="" placeholder="邮箱"><br>
+            <input type="text" name="phone" id="" placeholder="手机"><br>
+            <input type="submit" value="注册">
+         
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品添加</title>
+    <style type="text/css">
+        body {
+            background: url('../images/10.jpg');
+        }
+
+        .content {
+            width: 600px;
+            height: 700px;
+            margin: 0 auto;
+            font-size: 16px;
+            background-color: white;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .content form {
+            padding-top: 0px;
+            text-align: left;
+            margin-left: 100px;
+        }
+
+        .content h2 {
+            padding-top: 15px;
+        }
+
+        .content input[type='text'] {
+            width: 280px;
+            height: 20px;
+            border-radius: 20px;
+            line-height: 26px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .content input[type='submit']{
+            width: 100px;
+            height: 32px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+        }
+        .content p {
+            font-size: 14px;
+            color: red;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h2>商品添加</h2>
+        <form action="/product/add" method="post">
+            编号: &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<input type="text" name="Lid" id=""><br>
+            所属编号: <input type="text" name="family_id" id=""><br>
+            标题:&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<input type="text" name="title" id=""><br>
+            价格:&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <input type="text" name="price" id=""><br>
+            服务承诺: <input type="text" name="promise" id=""><br>
+            类别:&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <input type="text" name="type" id=""><br>
+            详情:&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <input type="text" name="detail" id=""><br>
+            口感: &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<input type="text" name="texture" id=""><br>
+            产地:&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <input type="text" name="place" id=""><br>
+            级别:&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; <input type="text" name="level" id=""><br>
+            重量: &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<input type="text" name="weight" id=""><br>
+            保质期:&nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="exp" id=""><br>
+            储存方式: <input type="text" name="keep" id=""><br>
+            上架时间: <input type="text" name="shelf_time" id=""><br>
+            售出数量: <input type="text" name="sold_count" id=""><br>
+            是否促销: <input type="text" name="is_onsale" id=""><br>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+</body>
+
+</html>
